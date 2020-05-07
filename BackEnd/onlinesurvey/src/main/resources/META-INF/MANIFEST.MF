@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Main-Class: edu.yonatan.onlinesurvey.OnlinesurveyApplication
+Class-Path: commons-codec-1.13.jar classmate-1.5.1.jar tomcat-embed-el-9
+ .0.30.jar spring-boot-starter-2.2.3.RELEASE.jar spring-boot-starter-val
+ idation-2.2.3.RELEASE.jar java-jwt-3.4.0.jar jackson-datatype-jdk8-2.10
+ .2.jar jackson-annotations-2.10.2.jar jackson-core-2.10.2.jar spring-be
+ ans-5.2.3.RELEASE.jar javase-3.4.0.jar spring-jdbc-5.2.3.RELEASE.jar sl
+ f4j-api-1.7.30.jar tomcat-embed-core-9.0.30.jar log4j-api-2.12.1.jar sp
+ ring-expression-5.2.3.RELEASE.jar mybatis-3.5.3.jar jackson-datatype-js
+ r310-2.10.2.jar spring-webmvc-5.2.3.RELEASE.jar jcommander-1.72.jar tom
+ cat-embed-websocket-9.0.30.jar spring-jcl-5.2.3.RELEASE.jar spring-boot
+ -starter-json-2.2.3.RELEASE.jar spring-context-5.2.3.RELEASE.jar jboss-
+ logging-3.4.1.Final.jar spring-boot-2.2.3.RELEASE.jar spring-boot-start
+ er-jdbc-2.2.3.RELEASE.jar mysql-connector-java-8.0.19.jar logback-class
+ ic-1.2.3.jar spring-tx-5.2.3.RELEASE.jar jackson-module-parameter-names
+ -2.10.2.jar jackson-databind-2.10.2.jar spring-web-5.2.3.RELEASE.jar ju
+ l-to-slf4j-1.7.30.jar logback-core-1.2.3.jar spring-core-5.2.3.RELEASE.
+ jar jai-imageio-core-1.4.0.jar spring-boot-starter-web-2.2.3.RELEASE.ja
+ r spring-boot-starter-tomcat-2.2.3.RELEASE.jar fastjson-1.2.66.jar myba
+ tis-spring-boot-autoconfigure-2.1.1.jar mybatis-spring-2.0.3.jar mybati
+ s-spring-boot-starter-2.1.1.jar core-3.4.0.jar hibernate-validator-6.0.
+ 18.Final.jar spring-boot-autoconfigure-2.2.3.RELEASE.jar snakeyaml-1.25
+ .jar HikariCP-3.4.2.jar jakarta.validation-api-2.0.2.jar log4j-to-slf4j
+ -2.12.1.jar spring-aop-5.2.3.RELEASE.jar jakarta.annotation-api-1.3.5.j
+ ar spring-boot-starter-logging-2.2.3.RELEASE.jar
+

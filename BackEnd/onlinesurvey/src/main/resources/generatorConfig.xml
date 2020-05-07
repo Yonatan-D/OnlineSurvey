@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+		PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<classPathEntry location="C:\Users\yonatan\.m2\repository\mysql\mysql-connector-java\8.0.19\mysql-connector-java-8.0.19.jar" />
+
+	<context id="context1">
+	    <!-- 不生成注释 -->
+	    <commentGenerator>
+	        <property name="suppressAllComments" value="true"/>
+	    </commentGenerator>
+	    <!-- 连接数据库 -->
+		<jdbcConnection
+			connectionURL="jdbc:mysql://localhost:3306/surveydb?serverTimezone=GMT%2B8"
+			driverClass="com.mysql.cj.jdbc.Driver"
+			password="mysql"
+			userId="root">
+			<property name="nullCatalogMeansCurrent" value="true" />
+		</jdbcConnection>
+		<!-- 配置生成的路径 -->
+		<javaModelGenerator targetPackage="edu.yonatan.onlinesurvey.entity"
+			targetProject="src/main/java" />
+<!--		<sqlMapGenerator targetPackage="edu.yonatan.onlinesurvey.dao"-->
+<!--			targetProject="src/main/java" />-->
+<!--		<javaClientGenerator targetPackage="edu.yonatan.onlinesurvey.dao"-->
+<!--			targetProject="src/main/java" type="XMLMAPPER" />-->
+		<!-- 修改生成的POJO类名，以及不生成example方法 -->
+		<table tableName="t_qs_checkbox" domainObjectName="QsCheckbox"
+		    enableCountByExample="false"
+		    enableUpdateByExample="false"
+		    enableDeleteByExample="false"
+		    enableSelectByExample="false"
+		    selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_an_checkbox" domainObjectName="AnCheckbox"
+		    enableCountByExample="false"
+		    enableUpdateByExample="false"
+		    enableDeleteByExample="false"
+		    enableSelectByExample="false"
+		    selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_qs_textarea" domainObjectName="QsTextarea"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_qs_rate" domainObjectName="QsRate"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_survey_recycle" domainObjectName="SurveyRecycle"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+		<table tableName="t_answer" domainObjectName="Answer"
+			   enableCountByExample="false"
+			   enableUpdateByExample="false"
+			   enableDeleteByExample="false"
+			   enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+	</context>
+</generatorConfiguration>
