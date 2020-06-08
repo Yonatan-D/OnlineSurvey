@@ -1,0 +1,9 @@
+[
+  {"id":"q20201001","type":"radio","title":"单选题：您的工作类型：","options":[{"id":"rd1","value":"销售类"},{"id":"rd2","value":"管理类"},{"id":"rd3","value":"服务类"}]}
+, {"id":"q20201002","type":"radio","title":"单选题：您的工作类型：","options":[{"id":"rd1","value":"销售类"},{"id":"rd2","value":"管理类"},{"id":"rd3","value":"服务类"}]}
+, {"id":"q20201003","type":"radio","title":"单选题：您的工作类型：","options":[{"id":"rd1","value":"销售类"},{"id":"rd2","value":"管理类"},{"id":"rd3","value":"服务类"},{"id":"rd4","value":"其他"}]}
+, {"id":"q20201004","type":"checkbox","title":"多选题：选择您喜欢的颜色：","options":[{"id":"ck1","value":"绿色"},{"id":"ck2","value":"黄色"},{"id":"ck3","value":"白色"}]}
+, {"id":"q20201005","type":"checkbox","title":"多选题：选择您本月最期待的电影：","options":[{"id":"ck1","value":"姜子牙"},{"id":"ck2","value":"唐人街探案Ⅲ"}]}
+, {"id":"q20201006","type":"textarea","title":"文字题：您还有什么建议："}
+, {"id":"q20201007","type":"rate","title":"评分题：您对动画电影《姜子牙》的推荐程度："}
+]

@@ -6,12 +6,8 @@ import { Message } from "element-ui";
 // 请求超时
 axios.defaults.timeout = 20000;
 // 设置基础URL地址，往后的请求都是带上该地址
-// 启用本地：
-// axios.defaults.baseURL = "http://localhost:39000";
-// const domain = axios.defaults.domain = "http://localhost:8080"
-// 线上部署：
-axios.defaults.baseURL = "http://139.9.72.120:39000";
-const domain = axios.defaults.domain = "http://survey.yonatan.cn"
+axios.defaults.baseURL = "http://localhost:39000";
+const domain = axios.defaults.domain = "http://localhost:8080"
 
 //请求拦截（前台到后台）
 axios.interceptors.request.use(

@@ -1,0 +1,18 @@
+{
+  "qsId": "qs012020001",
+  "title": "XX大学XXXX研究用户调查表",
+  "introduction": "您好！感谢您在百忙之中填写问卷，请您根据自己的实际感受和看法如实填写，本问卷采用匿名形式，所有数据仅供了解整体员工满意度情况，不针对个别数据进行研究。",
+  "qsNum": 7,
+  "qsitemIds": [
+    {"id":"q20201001","type":"radio","title":"单选题：您的工作类型：","options":[{"id":"rd1","value":"销售类"},{"id":"rd2","value":"管理类"},{"id":"rd3","value":"服务类"}]}
+    , {"id":"q20201002","type":"radio","title":"单选题：您的工作类型：","options":[{"id":"rd1","value":"销售类"},{"id":"rd2","value":"管理类"},{"id":"rd3","value":"服务类"}]}
+    , {"id":"q20201003","type":"radio","title":"单选题：您的工作类型：","options":[{"id":"rd1","value":"销售类"},{"id":"rd2","value":"管理类"},{"id":"rd3","value":"服务类"},{"id":"rd4","value":"其他"}]}
+    , {"id":"q20201004","type":"checkbox","title":"多选题：选择您喜欢的颜色：","options":[{"id":"ck1","value":"绿色"},{"id":"ck2","value":"黄色"},{"id":"ck3","value":"白色"}]}
+    , {"id":"q20201005","type":"checkbox","title":"多选题：选择您本月最期待的电影：","options":[{"id":"ck1","value":"姜子牙"},{"id":"ck2","value":"唐人街探案Ⅲ"}]}
+    , {"id":"q20201006","type":"textarea","title":"文字题：您还有什么建议："}
+    , {"id":"q20201007","type":"rate","title":"评分题：您对动画电影《姜子牙》的推荐程度："}
+  ],
+  "doTime": "2分钟",
+  "StartTime": "2020-01-19 12:00:00",
+  "EndTime": "2020-01-20 18:00:00"
+}
