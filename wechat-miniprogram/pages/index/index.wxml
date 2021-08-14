@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="survey">
+    <h1>报餐人数登记</h1>
+
+    <block wx:if="{{!hasUserInfo}}">
+      <button type="primary" bindtap="getUserProfile"> 请先授权登录 </button>
+    </block>
+    <block wx:else>
+      <button type="primary" bindtap="submitSurvey"> 提交问卷 </button>
+    </block>
+  </view>
+</view>
