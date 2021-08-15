@@ -8,3 +8,23 @@
 发现survey API（获取问卷信息）设计的有问题，返回信息很多层且累赘
 选择题的选项没必要为了orderId而返回表结构，直接后端整理成数组，给
 前端渲染就好，调整顺序接口照旧不用全部update。应该其他接口也有类似问题。
+
+表 t_survey_recycle
+增加字段 nickName，avatarUrl
+增加来源类型 data_source: 微信小程序
+
+仅限某个群可见功能
+
+-------------------
+timeline
+2021/8/14-15
+适配小程序端的问卷填写页面，完成显示和提交（未做：题目必填、提交后操作、显示问卷规则&填写人数）
+已经获取到用户信息，下一步是改造服务端（用户表、答卷回收表、获取问卷和提交问卷的API方法
+增加来自小程序的规则，以及/recycle/list也在小程序端填写后显示）
+
+参考文章：
+授权登录：wx.getUserProfile
+https://blog.51cto.com/u_14368928/2682159
+
+小程序如何区分转发好友和转发群：
+https://developers.weixin.qq.com/community/develop/doc/00024868db040001ae660133d51804

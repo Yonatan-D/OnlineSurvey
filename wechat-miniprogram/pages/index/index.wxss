@@ -1,1 +1,50 @@
 /**index.wxss**/
+.survey-title {
+  font-size: 18px;
+  color: #2b2b2b;
+}
+.survey-introd {
+  font-size: 12px;
+  color: #4f4f4f;
+}
+.survey-qs-cell {
+  margin: 15px 0px;
+}
+.survey-qs-cell text {
+  margin: 10px 0px;
+}
+.survey-opt-cell {
+  margin: 6px 0px;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border: solid 1px #efefef;
+  border-radius: 4px;
+}
+.survey-opt-cell radio {
+  margin-right: 5px;
+}
+
+/* 按钮区域样式 */
+.btn-area {
+  margin: 25px 0px;
+}
+/* 日期选择器样式 */
+.inputdate {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  border: solid 1px #efefef;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #4f4f4f;
+}
+.inputdate::before{
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU4NkUxN0EzNjdENTExRTg5MjVCOTZBQjU1RUM2RDQ3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU4NkUxN0E0NjdENTExRTg5MjVCOTZBQjU1RUM2RDQ3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTg2RTE3QTE2N0Q1MTFFODkyNUI5NkFCNTVFQzZENDciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTg2RTE3QTI2N0Q1MTFFODkyNUI5NkFCNTVFQzZENDciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz52Y6XaAAAAxklEQVR42mL8//8/w6xZsxhoAdLS0hiYGGgMCFnwkAgzHhJrgQUQ3wHi/1AMAnJQ+j8OjE3NHahZGBbMAWJlKoQKyIyZ2CzQRlPIDMSPgJgNj2G41OgSEwflQKwFxCVkqGGEMVjwaG6FYgZK1NA8mbJg8xatLPhPZbMZ8cUBIw6LsYkz4nPkgBcVVI0DBiLi4z8JagfWB6ORjNWC52he/Y/Fy9jEsYm9wGZBCrIEBeApECdji+RtQCxJ7SBiBLUqhnQkAwQYADxcN2KyYpWEAAAAAElFTkSuQmCC);
+  vertical-align: middle;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  padding: 3px 15px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}

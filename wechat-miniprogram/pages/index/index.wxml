@@ -1,13 +1,56 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="survey">
-    <h1>报餐人数登记</h1>
+  <text class="survey-title"> {{ surveyInfo.title }} </text>
+  <text class="survey-introd"> {{ surveyInfo.introduction }} </text>
+  <form catchsubmit="submitSurvey">
 
-    <block wx:if="{{!hasUserInfo}}">
-      <button type="primary" bindtap="getUserProfile"> 请先授权登录 </button>
-    </block>
-    <block wx:else>
-      <button type="primary" bindtap="submitSurvey"> 提交问卷 </button>
-    </block>
-  </view>
+    <view class="survey-qs-cell" wx:for="{{ surveyInfo.qsitems }}" wx:for-item="qs" wx:key="index">
+      <text>{{ index+1 }}. {{ qs.title }}</text>
+      <!-- TODO：抽成题型组件 -->
+      <!-- 单选题 -->
+      <view wx:if="{{ qs.type === 'radio' }}">
+        <radio-group name="{{ qs.type + '/' + qs.id}}">
+          <label wx:for="{{ qs.options }}" wx:for-item="opt" wx:key="index">
+            <view class="survey-opt-cell">
+              <radio value="{{ opt.id }}"></radio> {{ opt.value }}
+            </view>
+          </label>
+        </radio-group>
+      </view>
+      <!-- 多选题 -->
+      <view wx:if="{{ qs.type === 'checkbox' }}">
+        <checkbox-group name="{{ qs.type + '/' + qs.id}}">
+          <label wx:for="{{ qs.options }}" wx:for-item="opt" wx:key="index">
+            <view class="survey-opt-cell">
+              <checkbox value="{{ opt.id }}"></checkbox> {{ opt.value }}
+            </view>
+          </label>
+        </checkbox-group>
+      </view>
+      <!-- 文本题 -->
+      <view wx:if="{{ qs.type === 'textarea' }}">
+        <textarea name="{{ qs.type + '/' + qs.id}}" />
+      </view>
+      <!-- 评分题 -->
+      <view wx:if="{{ qs.type === 'rate' }}">
+        <slider name="{{ qs.type + '/' + qs.id}}" left-icon="cancel" right-icon="success_no_circle" max="5"/>
+      </view>
+    </view>
+
+    <text>2. 订餐日期：</text>
+    <picker mode="date" model:value="{{ date }}" start="{{ startDate }}" end="{{ endDate }}">
+      <textarea class="inputdate">
+        {{ date }}
+      </textarea>
+    </picker>
+
+    <view class="btn-area">
+      <block wx:if="{{!hasUserInfo}}">
+        <button type="primary" bindtap="getUserProfile"> 请先授权登录 </button>
+      </block>
+      <block wx:else>
+        <button type="primary" formType="submit"> 提交问卷 </button>
+      </block>
+    </view>
+  </form>
 </view>
