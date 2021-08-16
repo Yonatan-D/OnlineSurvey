@@ -5,6 +5,14 @@
   <form catchsubmit="submitSurvey">
 
     <view class="survey-qs-cell" wx:for="{{ surveyInfo.qsitems }}" wx:for-item="qs" wx:key="index">
+
+      <text>订餐日期：</text>
+      <picker mode="date" model:value="{{ date }}" start="{{ startDate }}" end="{{ endDate }}">
+        <textarea class="inputdate">
+          {{ date }}
+        </textarea>
+      </picker>
+
       <text>{{ index+1 }}. {{ qs.title }}</text>
       <!-- TODO：抽成题型组件 -->
       <!-- 单选题 -->
@@ -36,13 +44,6 @@
         <slider name="{{ qs.type + '/' + qs.id}}" left-icon="cancel" right-icon="success_no_circle" max="5"/>
       </view>
     </view>
-
-    <text>2. 订餐日期：</text>
-    <picker mode="date" model:value="{{ date }}" start="{{ startDate }}" end="{{ endDate }}">
-      <textarea class="inputdate">
-        {{ date }}
-      </textarea>
-    </picker>
 
     <view class="btn-area">
       <block wx:if="{{!hasUserInfo}}">

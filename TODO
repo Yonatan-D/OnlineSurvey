@@ -22,6 +22,12 @@ timeline
 已经获取到用户信息，下一步是改造服务端（用户表、答卷回收表、获取问卷和提交问卷的API方法
 增加来自小程序的规则，以及/recycle/list也在小程序端填写后显示）
 
+只需要修改答卷回收表，用户信息都记录这张表
+小程序进入填写页时，就用 wx.login 拿到 wxuserid 去查库是否填写（post: wxuserid+surveyid+当天）
+填写了，按钮不可用，就显示答卷详情，还有 /recycle/wxuser/list 显示参与人数头像昵称
+没填写，变成提交按钮
+
+
 参考文章：
 授权登录：wx.getUserProfile
 https://blog.51cto.com/u_14368928/2682159
