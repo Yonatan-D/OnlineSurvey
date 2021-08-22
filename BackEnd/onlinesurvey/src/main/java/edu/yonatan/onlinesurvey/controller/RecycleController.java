@@ -35,7 +35,7 @@ public class RecycleController {
      * @param size
      * @return
      */
-    @UserLoginToken
+//    @UserLoginToken
     @PostMapping("/list")
     @CrossOrigin
     @Transactional(rollbackFor = Exception.class)

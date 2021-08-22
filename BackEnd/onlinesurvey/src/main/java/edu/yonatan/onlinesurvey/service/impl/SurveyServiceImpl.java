@@ -79,9 +79,6 @@ public class SurveyServiceImpl implements SurveyService {
         SurveyRecycle surveyRecycle = recycleAnswerVO.getSurveyRecycle();
         surveyRecycle.setId(recycleId);
         surveyRecycleMapper.saveRecycleSurvey(surveyRecycle);
-        // 保存微信用户信息
-        String wxUserId = recycleAnswerVO.getWxUserId();
-
 
         for (Answer an:recycleAnswerVO.getAnswers()
              ) {

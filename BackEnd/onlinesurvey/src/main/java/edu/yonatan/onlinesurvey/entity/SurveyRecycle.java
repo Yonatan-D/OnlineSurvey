@@ -19,6 +19,12 @@ public class SurveyRecycle {
 
     private String position;
 
+    private String wxUserId;
+
+    private String wxAvatarUrl;
+
+    private String wxNickName;
+
     public String getId() {
         return id;
     }
@@ -79,5 +85,29 @@ public class SurveyRecycle {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    public String getWxUserId() {
+        return wxUserId;
+    }
+
+    public void setWxUserId(String wxUserId) {
+        this.wxUserId = wxUserId;
+    }
+
+    public String getWxAvatarUrl() {
+        return wxAvatarUrl;
+    }
+
+    public void setWxAvatarUrl(String wxAvatarUrl) {
+        this.wxAvatarUrl = wxAvatarUrl;
+    }
+
+    public String getWxNickName() {
+        return wxNickName;
+    }
+
+    public void setWxNickName(String wxNickName) {
+        this.wxNickName = wxNickName;
     }
 }

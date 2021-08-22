@@ -2,8 +2,7 @@ package edu.yonatan.onlinesurvey.config;
 
 public enum UserRole {
     ROLE_SYS_ADMIN("admin", 100000),
-    ROLE_NORMAL("user", 200000),
-    ROLE_WX("wxuser", 300000);
+    ROLE_NORMAL("user", 200000);
 
     private final String roleName;
 

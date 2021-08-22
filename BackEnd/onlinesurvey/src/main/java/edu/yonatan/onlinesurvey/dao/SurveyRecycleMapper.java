@@ -65,6 +65,15 @@ public interface SurveyRecycleMapper {
             "  <if test=\"position != null\">" +
             "    position," +
             "  </if>" +
+            "  <if test=\"wxUserId != null\">" +
+            "    wx_user_id," +
+            "  </if>" +
+            "  <if test=\"wxAvatarUrl != null\">" +
+            "    wx_avatar_url," +
+            "  </if>" +
+            "  <if test=\"wxNickName != null\">" +
+            "    wx_nick_name," +
+            "  </if>" +
             "</trim>" +
             "<trim prefix=\"values (\" suffix=\")\" suffixOverrides=\",\">" +
             "  <if test=\"id != null\">" +
@@ -90,6 +99,15 @@ public interface SurveyRecycleMapper {
             "  </if>" +
             "  <if test=\"position != null\">" +
             "    #{position}," +
+            "  </if>" +
+            "  <if test=\"wxUserId != null\">" +
+            "    #{wxUserId}," +
+            "  </if>" +
+            "  <if test=\"wxAvatarUrl != null\">" +
+            "    #{wxAvatarUrl}," +
+            "  </if>" +
+            "  <if test=\"wxNickName != null\">" +
+            "    #{wxNickName}," +
             "  </if>" +
             "</trim>" +
             "</script>")

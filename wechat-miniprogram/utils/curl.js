@@ -1,5 +1,5 @@
 const curl = {
-    get (url, data) {
+    get(url, data) {
         return new Promise((resolve, reject) => {
             wx.request({
                 method: 'GET',
@@ -13,12 +13,15 @@ const curl = {
         })
     },
 
-    post (url, data) {
+    post(url, data, header = {
+        'content-type': 'application/json'
+    }) {
         return new Promise((resolve, reject) => {
             wx.request({
                 method: 'POST',
                 url: getApp().globalData.config.host + url,
                 data,
+                header,
                 success: (res) => {
                     resolve(res.data);
                 },

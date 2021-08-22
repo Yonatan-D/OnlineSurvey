@@ -21,8 +21,8 @@ App({
             },
             success: (res) => {
               const { openid, session_key } = res.data;
-              console.log({ openid, session_key });
-              Object.assign(this.globalData, { openid, session_key })
+              const user = Object.assign({ openid, session_key }, wx.getStorageSync('user'))
+              wx.setStorageSync('user', user)
             }
           })
         }

@@ -41,7 +41,7 @@
       </view>
       <!-- 评分题 -->
       <view wx:if="{{ qs.type === 'rate' }}">
-        <slider name="{{ qs.type + '/' + qs.id}}" left-icon="cancel" right-icon="success_no_circle" max="5"/>
+        <slider name="{{ qs.type + '/' + qs.id}}" left-icon="cancel" right-icon="success_no_circle" max="5" show-value/>
       </view>
     </view>
 

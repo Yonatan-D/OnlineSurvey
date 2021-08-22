@@ -11,8 +11,6 @@ public class RecycleAnswerVO {
 
     private List<Answer> answers;
 
-    private String wxUserId;
-
     public SurveyRecycle getSurveyRecycle() {
         return surveyRecycle;
     }
@@ -28,8 +26,4 @@ public class RecycleAnswerVO {
     public void setAnswers(List<Answer> answers) {
         this.answers = answers;
     }
-
-    public String getWxUserId() { return wxUserId; }
-
-    public void setWxUserId(String wxUserId) { this.wxUserId = wxUserId; }
 }
