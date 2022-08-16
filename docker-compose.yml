@@ -10,7 +10,7 @@ services:
       - MYSQL_USER=survey
       - MYSQL_PASSWORD=survey
     ports:
-      - 8080:8080
+      - 80:80
     networks:
       - osv_net
     depends_on:
