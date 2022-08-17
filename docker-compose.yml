@@ -24,6 +24,7 @@ services:
       - 3306:3306
     environment:
       - TZ=Asia/Shanghai
+      - LANG=C.UTF-8
       - MYSQL_DATABASE=surveydb
       - MYSQL_USER=survey
       - MYSQL_PASSWORD=survey
