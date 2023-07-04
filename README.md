@@ -1,10 +1,11 @@
 # OnlineSurvey
 
-2020毕设，问卷调查平台
+2020毕设，在线问卷调查网站
 
 演示地址 (Demo)：https://survey.yonatan.cn/
 
->账户 demo / 密码 202005
+> 用户账号/密码：demo / 202005
+> 管理员账号/密码：admin / 123456
 
 
 
