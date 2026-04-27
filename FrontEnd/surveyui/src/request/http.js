@@ -7,7 +7,8 @@ import { Message } from "element-ui";
 axios.defaults.timeout = 20000;
 // 设置基础URL地址，往后的请求都是带上该地址
 axios.defaults.baseURL = "api";
-const domain = axios.defaults.domain = "http://localhost:8080"
+// const domain = axios.defaults.domain = "http://localhost:8080"
+const domain = axios.defaults.domain = window.location.protocol + "//" + window.location.host;
 
 //请求拦截（前台到后台）
 axios.interceptors.request.use(
